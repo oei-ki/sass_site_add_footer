@@ -1,5 +1,7 @@
 //메인 페이지
 .mainbanner {
+  position: relative;
+  display: block;
   height: 550px;
   background-image: url('../img/main_banner.jpg');
   background-repeat: no-repeat;

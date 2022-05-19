@@ -1,128 +1,201 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
-    <title>xwood</title>
-    <link rel="stylesheet" href="./css/style.min.css">
-    <script type="text/javascript" src="./js/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/common.js"></script>
-  </head>
-  <body>
-    <div id="wrap">
-      <header id="header">
-        <h1 id="top-logo">
-          <a href="index.html">XWOOD</a>
-        </h1>
-        <!--메인메뉴-->
-        <nav id="top-nav">
-          <ul>
-            <li><a href="./company/introduce.html">Company</a>
-              <ul class="sub-menu">
-                <li><a href="./company/introduce.html">Introduce</a></li>
-                <li><a href="./company/ci.html">CI</a></li>
-                <li><a href="./company/history.html">History</a></li>
-              </ul>
-            </li>
-            <li><a href="./product/product.html">Product</a></li>
-            <li><a href="./gallery/gallery.html">Gallery</a></li>
-            <li><a href="./community/notice.html">Community</a>
-              <ul class="sub-menu">
-                <li><a href="./community/notice.html">Notice</a></li>
-                <li><a href="./community/faq.html">FAQ</a></li>
-              </ul>
-            </li>
-            <li><a href="./location/location.html">Location</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <!-- 메인배너 -->
-        <div class="mainbanner"></div>
-        <!-- 컨텐츠 영역 -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>xwood</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/common.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <h1 id="top-logo">
+        <a href="index.html">XWOOD</a>
+      </h1>
+      <!--메인메뉴-->
+      <nav id="top-nav">
+        <ul>
+          <li><a href="./company/introduce.html">Company</a>
+            <ul class="sub-menu">
+              <li><a href="./company/introduce.html">Introduce</a></li>
+              <li><a href="./company/ci.html">CI</a></li>
+              <li><a href="./company/history.html">History</a></li>
+            </ul>
+          </li>
+          <li><a href="./product/product.html">Product</a></li>
+          <li><a href="./gallery/gallery.html">Gallery</a></li>
+          <li><a href="./community/notice.html">Community</a>
+            <ul class="sub-menu">
+              <li><a href="./community/notice.html">Notice</a></li>
+              <li><a href="./community/faq.html">FAQ</a></li>
+            </ul>
+          </li>
+          <li><a href="./location/location.html">Location</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- 메인배너 -->
+      <style>
+         .swiper {
+           width: 100%;
+           height: 100%;
+         }
+
+         .swiper-slide {
+           text-align: center;
+           font-size: 18px;
+           height: 550px;
+
+           /* Center slide text vertically */
+           display: -webkit-box;
+           display: -ms-flexbox;
+           display: -webkit-flex;
+           display: flex;
+           -webkit-box-pack: center;
+           -ms-flex-pack: center;
+           -webkit-justify-content: center;
+           justify-content: center;
+           -webkit-box-align: center;
+           -ms-flex-align: center;
+           -webkit-align-items: center;
+           align-items: center;
+         }
+
+         .swiper-slide img {
+           display: block;
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+         }
+
+         .swiper {
+           margin-left: auto;
+           margin-right: auto;
+         }
+       </style>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide mainbanner">Slide 1</div>
+          <div class="swiper-slide mainbanner">Slide 2</div>
+          <div class="swiper-slide mainbanner">Slide 3</div>
+          <div class="swiper-slide mainbanner">Slide 2</div>
+          <div class="swiper-slide mainbanner">Slide 3</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- 컨텐츠 영역 -->
+      <div class="container">
+        <div class="content">
+          <div class="inner">
+            <div class="box items_2">
+              <div class="items">
+                <h3 class="title">funiture</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="./company/introduce.html" class="gbtn">More View</a>
+              </div>
+              <div class="items">
+                <img src="./img/thumb_nail01.jpg" alt="funiture01">
+              </div>
+            </div>
+          </div>
+          <div class="inner">
+            <div class="box items_2">
+              <div class="items">
+                <img src="./img/thumb_nail02.jpg" alt="funiture01">
+              </div>
+              <div class="items">
+                <h3 class="title">funiture</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="./company/introduce.html" class="gbtn">More View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="footer-top">
         <div class="container">
-          <div class="content">
-            <div class="inner">
-              <div class="box items_2">
-                <div class="items">
-                  <h3 class="title">funiture</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <a href="./company/introduce.html" class="gbtn">More View</a>
-                </div>
-                <div class="items">
-                  <img src="./img/thumb_nail01.jpg" alt="funiture01">
-                </div>
-              </div>
+          <div class="row">
+            <div class="column footer-logo">
+              <!-- footer logo -->
+              <h3>Logo</h3>
             </div>
-            <div class="inner">
-              <div class="box items_2">
-                <div class="items">
-                  <img src="./img/thumb_nail02.jpg" alt="funiture01">
-                </div>
-                <div class="items">
-                  <h3 class="title">funiture</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <a href="./company/introduce.html" class="gbtn">More View</a>
-                </div>
-              </div>
+            <div class="column">
+              <!-- site map -->
+              <h4>site map</h4>
+              <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#myprofile">My Profile</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#myskill">My Skill</a></li>
+                <li><a href="#ourclients">Our Clients</a></li>
+                <li><a href="#mytools">My Tool</a></li>
+                <li><a href="#project">Project</a></li>
+              </ul>
             </div>
-          </div>
-        </div>
-      </main>
-      <footer id="footer">
-        <div class="footer-top">
-          <div class="container">
-            <div class="row">
-              <div class="column footer-logo">
-                <!-- footer logo -->
-                <h3>Logo</h3>
-              </div>
-              <div class="column">
-                <!-- site map -->
-                <h4>site map</h4>
-                <ul>
-                  <li><a href="#intro">Home</a></li>
-                  <li><a href="#myprofile">My Profile</a></li>
-                  <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#myskill">My Skill</a></li>
-                  <li><a href="#ourclients">Our Clients</a></li>
-                  <li><a href="#mytools">My Tool</a></li>
-                  <li><a href="#project">Project</a></li>
-                </ul>
-              </div>
-              <div class="column">
-                <!-- contact us -->
-                <h4>contact us</h4>
-                <p>
-                  A108 Adam street <br>
-                  New York, NY 535022<br>
-                  United states<br>
-                  <strong>Phone :</strong><a href="tel:+82-10-0000-0000">+82-010-0000-0000</a><br>
-                  <strong>Email :</strong><a href="mailto:mymail@naver.com">mymail@naver.com</a>
-                </p>
-              </div>
-              <div class="column news">
-                <!-- news -->
-                <h4>news</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <form>
-                  <input type="text" name="search"><input type="submit" value="search">
-                </form>
-              </div>
+            <div class="column">
+              <!-- contact us -->
+              <h4>contact us</h4>
+              <p>
+                A108 Adam street <br>
+                New York, NY 535022<br>
+                United states<br>
+                <strong>Phone :</strong><a href="tel:+82-10-0000-0000">+82-010-0000-0000</a><br>
+                <strong>Email :</strong><a href="mailto:mymail@naver.com">mymail@naver.com</a>
+              </p>
+            </div>
+            <div class="column news">
+              <!-- news -->
+              <h4>news</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <form>
+                <input type="text" name="search"><input type="submit" value="search">
+              </form>
             </div>
           </div>
         </div>
-        <!-- footer 하단영역 -->
-        <div class="container">
-          <div class="copyright">
-            &copy;copyright <strong>MyPage</strong> .All Rights Reserved
-          </div>
-          <div class="credits">
-            Designed By <a href="mailto:mymail@naver.com">MySelf</a>
-          </div>
+      </div>
+      <!-- footer 하단영역 -->
+      <div class="container">
+        <div class="copyright">
+          &copy;copyright <strong>MyPage</strong> .All Rights Reserved
         </div>
-        <!-- &copy;copyright all rights reserved. -->
-      </footer>
-    </div>
-  </body>
+        <div class="credits">
+          Designed By <a href="mailto:mymail@naver.com">MySelf</a>
+        </div>
+      </div>
+      <!-- &copy;copyright all rights reserved. -->
+    </footer>
+  </div>
+  <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+  </script>
+</body>
+
 </html>
